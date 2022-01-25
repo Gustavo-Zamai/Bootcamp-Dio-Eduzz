@@ -8,7 +8,7 @@ http.createServer((request, response) => {
     if (url === '/stats'){
         response.end(JSON.stringify(stats, null, 2));
     }else{
-        response.end(<h1>Welcome to pcRam!</h1>);
+        response.end('<h1>Welcome to pcRam!</h1>');
     }
 }).listen(port, () => {
     console.log(`Server is running in ${host}:${port} , ${stats}`);
